@@ -1,0 +1,11 @@
+$main-color:#D09157;
+button {
+    outline: none;
+    transition: all .2s;
+    &[type=primary] {
+        background-color: $main-color;
+        &[disabled] {
+            background-color: lighten($main-color, 20%);
+        }
+    }
+}
